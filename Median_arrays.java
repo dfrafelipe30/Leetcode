@@ -5,8 +5,6 @@ public class Median_arrays {
         double m1 = -1, m2 = -1;
         int m = nums1.length;
         int n = nums2.length;
-        //System.out.println("m " + m);
-        //System.out.println("n " + n);
         if (m == 0 ){
             int mid = (int)n/2;
             double aux = (n % 2 == 1) ? (double)nums2[mid] : ((double)nums2[mid-1] + (double)nums2[mid])/2;
@@ -51,7 +49,6 @@ public class Median_arrays {
     public static void main (String[] args){
         int ar1[] = {};
         int ar2[] = {1,2,3,4,5};
-
         System.out.println(findMedianSortedArrays(ar1,ar2));
     }
 }
